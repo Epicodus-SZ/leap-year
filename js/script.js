@@ -1,9 +1,8 @@
 // BUSINESS LOGIC
 function isLeapYear(year) {
-
-  // is the year divisible by 4 or 400?
-  if (year % 4 === 0 || year % 400 === 0) return true;
-  else {
+  if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
+    return true;
+  } else {
     return false;
   }
 

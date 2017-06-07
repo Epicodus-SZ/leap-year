@@ -1,17 +1,29 @@
 # Leap Year Calculator
-A web page that accepts a 4 digit year, and determines if the year is or will be a leap year year.
+A web page that accepts a year, and determines if the year is or will be a leap year...um, year.
+
+
+|Behavior - Plain English|Input|Output|
+|---|---|---|
+|A year is not a leap year if it is not divisible by 4|1993|false|
+|A year is a leap year if it is divisible by 4|2004|true|
+|A year is not a leap year if it is divisible by 100|1900|false|
+|A year is a leap year if it's divisible by 400|2000|true|
+
 
 ## What's included
 Within the repository you'll find the following directories and files:
 
 ```
-html-dev-template/
+leap-year/
 ├── css/
-│    ├── styles.css
-│    └── bootstrap.css
+│    ├── bootstrap.css
+│    └── styles.css
 ├── js/
 │    ├── jquery-3.2.1.js
 │    └── script.js
+├── test/
+│    └── test.js
+├── .gitignore
 ├── index.html
 └── README.md
 ```
