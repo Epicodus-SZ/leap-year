@@ -25,6 +25,7 @@ body {
   opacity: .7;
 }
 
-#results {
+#noResult,
+#yesResult {
   display: none;
 }

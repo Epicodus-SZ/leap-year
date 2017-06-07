@@ -24,13 +24,13 @@
       <!-- A form example -->
       <div class="col-lg-12">
         <div class="well bs-component">
-          <form class="form-horizontal">
+          <form id="leapYearForm" class="form-horizontal">
             <fieldset>
               <legend>Leap Year Calculator</legend>
               <div class="form-group">
-                <label for="inputEmail" class="col-lg-2 control-label">Year</label>
+                <label for="inputYear" class="col-lg-2 control-label">Year</label>
                 <div class="col-lg-10">
-                  <input type="text" class="form-control" id="inputYear" placeholder="Enter a year (YYYY), and press SUBMIT">
+                  <input type="text" name="inputYear" autocomplete="off" class="form-control" id="inputYear" placeholder="Enter a year (YYYY), and press SUBMIT">
                 </div>
               </div>
 
@@ -42,9 +42,15 @@
             </fieldset>
           </form>
         </div>
-        <div id="results" class="alert alert-dismissible alert-danger">
+        <!--NOT a leap year-->
+        <div id="noResult" class="alert alert-dismissible alert-danger">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+          <p><strong>Oh snap!</strong> <span class="yearPlace"></span> is not a leap year, sorry to burst your bubble.</p>
+        </div>
+        <!--YES a leap year-->
+        <div id="yesResult" class="alert alert-dismissible alert-success">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <p><strong>Well I'll be...</strong><span class="yearPlace"></span> is a leap year.</p>
         </div>
       </div>
       <!--end of column -->
@@ -56,11 +62,11 @@
   </div>
 
   <!-- Unit testing code -->
-  <div id="qunit"></div>
+  <!--<div id="qunit"></div>
   <div id="qunit-fixture"></div>
   <script src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
   <script src="test/tests.js">
-  </script>
+  </script>-->
 </body>
 
 </html>

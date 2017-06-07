@@ -1,12 +1,5 @@
-# HTML Dev Template
-A simple, web development file structure, to speed web development.  This template is a good starting point for a web site requiring Bootstrap, jQuery and Google fonts. Originally coded on 6/6/2017.  By Steve Zaske.
-
-## Install Instructions
-1. git clone the repository, to your local drive
-2. rename the folder
-3. delete the .git (hidden) folder
-4. git init
-
+# Leap Year Calculator
+A web page that accepts a 4 digit year, and determines if the year is or will be a leap year year.
 
 ## What's included
 Within the repository you'll find the following directories and files:
@@ -30,6 +23,7 @@ Direct questions and comments to: [github@zaske.com](mailto:github@zaske.com)
 * jQuery
 * Bootstrap
 * Google Fonts
+* QUnit
 
 ### License
 Copyright 2017 Steve Zaske
